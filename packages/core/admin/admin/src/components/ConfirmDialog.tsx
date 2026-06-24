@@ -5,6 +5,8 @@ import { WarningCircle } from '@strapi/icons';
 import { useIntl } from 'react-intl';
 import { styled } from 'styled-components';
 
+export const __test = {}
+
 /* -------------------------------------------------------------------------------------------------
  * ConfirmDialog
  * -----------------------------------------------------------------------------------------------*/

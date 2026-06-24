@@ -5,7 +5,6 @@ import { WarningCircle } from '@strapi/icons';
 import { useIntl } from 'react-intl';
 import { styled } from 'styled-components';
 
-export const __test = {}
 
 /* -------------------------------------------------------------------------------------------------
  * ConfirmDialog
@@ -84,6 +83,8 @@ const ConfirmDialog = ({
     }
   };
 
+  const __test = {}
+
   return (
     <Dialog.Content>
       <Dialog.Header>
@@ -102,6 +103,7 @@ const ConfirmDialog = ({
               variant="tertiary"
               onClick={(e) => {
                 e.stopPropagation();
+                console.log(__test);
                 if (onCancel) {
                   onCancel(e);
                 }

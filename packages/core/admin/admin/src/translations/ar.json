@@ -1,4 +1,5 @@
 {
+  "test": "test",
   "Auth.form.button.forgot-password": "إرسال للبريد",
   "Auth.form.button.login": "تسجيل دخول",
   "Auth.form.button.register": "مستعد للبدء",

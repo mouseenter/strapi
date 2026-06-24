@@ -38,9 +38,10 @@ jobs:
 
       - name: Get PR number
         id: pr
-        run: echo "pr=$(< /tmp/admin-bundle-size-pr-number)" >> "$GITHUB_OUTPUT"
+        run: echo "pr=$(</tmp/admin-bundle-size-pr-number)" >> "$GITHUB_OUTPUT"
 
-      - uses: marocchino/sticky-pull-request-comment@0ea0beb66eb9baf113663a64ec522f60e49231c0 # v3.0.4
+      - uses: thollander/actions-comment-pull-request@v2
         with:
-          path: /tmp/admin-bundle-size-comment.md
-          number_force: ${{ steps.pr.outputs.pr }}
+          file-path: /tmp/admin-bundle-size-comment.md
+          pr-number: ${{ steps.pr.outputs.pr }}
+          comment-tag: admin-bundle-size
